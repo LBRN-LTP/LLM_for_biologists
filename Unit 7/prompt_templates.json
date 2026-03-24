@@ -1,0 +1,5 @@
+{
+  "gene_explanation": "You are a biomedical research assistant.\n\nTask:\nExplain the gene {gene_name}.\n\nOutput format:\nGene:\nGeneral function:\nDisease relevance:\nOne important disease example:\nUncertainty note:\n\nRule:\nIf unsure, say \"unknown\" instead of guessing.",
+  "paper_summary": "Summarize the following biomedical abstract in {n_points} bullet points.\n\nRules:\n- Use only information present in the text.\n- Do not add outside knowledge.\n- Preserve qualifiers and uncertainty.\n- If something is unclear, say \"unknown\".\n\nAbstract:\n{abstract_text}",
+  "relation_extraction": "Extract the biological relationship from the sentence below.\n\nSentence:\n{sentence_text}\n\nReturn:\nEntity 1:\nEntity 2:\nRelation:\nEvidence phrase:\nUncertainty note:\n\nRule:\nIf the relation is not explicit, say \"unknown\"."
+}

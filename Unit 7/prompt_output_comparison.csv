@@ -1,0 +1,104 @@
+task,prompt_type,prompt,output,variant,prompt_length_chars
+gene_explanation,zero_shot,"
+Explain the biomedical significance of the gene TP53 in simple scientific language.
+Include:
+1. its general biological role,
+2. why it is important in disease,
+3. one example of a disease where it is relevant.
+",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,,
+gene_explanation,few_shot,"
+You are a biomedical explainer.
+
+Example:
+
+Gene: EGFR
+Output:
+General role: EGFR is a receptor involved in cell growth and survival signaling.
+Disease relevance: Abnormal EGFR signaling is associated with uncontrolled cell proliferation.
+Example disease: EGFR is strongly associated with non-small cell lung cancer.
+
+Now follow the same format for this gene:
+
+Gene: TP53
+",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,,
+gene_explanation,structured,"
+You are a biomedical research assistant.
+
+Task:
+Explain the gene TP53 in a structured way.
+
+Output format:
+Gene:
+General function:
+Disease relevance:
+One important disease example:
+Uncertainty note:
+
+Rule:
+If you are unsure about any part, clearly say ""unknown"" instead of guessing.
+",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,,
+paper_summary,safe_summary,"
+Summarize the following biomedical abstract in 4 bullet points.
+
+Rules:
+- Use only information present in the text.
+- Do not add extra background knowledge.
+- Preserve uncertainty and cautious language if present.
+- If something is unclear, say ""unknown"".
+
+Abstract:
+Psoriasis is a chronic inflammatory skin disease characterized by keratinocyte hyperproliferation,
+immune dysregulation, and increased expression of cytokines such as TNF-alpha, IL17, and IL23.
+Recent transcriptomic studies have identified multiple dysregulated pathways involved in epidermal
+differentiation, immune cell recruitment, and cytokine signaling. Biologic therapies targeting TNF-alpha
+and IL17 have improved treatment outcomes, but disease heterogeneity remains a challenge.
+Further integration of molecular profiling and literature-based evidence may improve personalized
+therapeutic strategies.
+",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,,
+reasoning,direct,"What is the relationship between TP53 and cancer?
+Answer in 3 concise sentences.",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,,
+reasoning,chain_of_thought,"What is the relationship between TP53 and cancer?
+
+Think step by step.
+Explain:
+1. the normal role of TP53,
+2. what happens when it is altered,
+3. why that matters in cancer.
+
+Then give a final concise answer.",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,,
+,,"Summarize this biomedical abstract:
+
+Psoriasis is a chronic inflammatory skin disease characterized by keratinocyte hyperproliferation,
+immune dysregulation, and increased expression of cytokines such as TNF-alpha, IL17, and IL23.
+Recent transcriptomic studies have identified multiple dysregulated pathways involved in epidermal
+differentiation, immune cell recruitment, and cytokine signaling. Biologic therapies targeting TNF-alpha
+and IL17 have improved treatment outcomes, but disease heterogeneity remains a challenge.
+Further integration of molecular profiling and literature-based evidence may improve personalized
+therapeutic strategies.",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,variant_1_basic,646.0
+,,"Summarize the following biomedical abstract in 4 bullet points.
+Use only information present in the abstract.
+
+Abstract:
+Psoriasis is a chronic inflammatory skin disease characterized by keratinocyte hyperproliferation,
+immune dysregulation, and increased expression of cytokines such as TNF-alpha, IL17, and IL23.
+Recent transcriptomic studies have identified multiple dysregulated pathways involved in epidermal
+differentiation, immune cell recruitment, and cytokine signaling. Biologic therapies targeting TNF-alpha
+and IL17 have improved treatment outcomes, but disease heterogeneity remains a challenge.
+Further integration of molecular profiling and literature-based evidence may improve personalized
+therapeutic strategies.",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,variant_2_structured,730.0
+,,"Summarize the following biomedical abstract in 4 bullet points.
+
+Rules:
+- Use only information present in the abstract.
+- Do not add outside knowledge.
+- Preserve uncertainty and caution.
+- If evidence is missing, say ""unknown"".
+
+Abstract:
+Psoriasis is a chronic inflammatory skin disease characterized by keratinocyte hyperproliferation,
+immune dysregulation, and increased expression of cytokines such as TNF-alpha, IL17, and IL23.
+Recent transcriptomic studies have identified multiple dysregulated pathways involved in epidermal
+differentiation, immune cell recruitment, and cytokine signaling. Biologic therapies targeting TNF-alpha
+and IL17 have improved treatment outcomes, but disease heterogeneity remains a challenge.
+Further integration of molecular profiling and literature-based evidence may improve personalized
+therapeutic strategies.",[DEMO MODE] Live model output not available. This prompt is ready for API testing.,variant_3_safe,849.0
