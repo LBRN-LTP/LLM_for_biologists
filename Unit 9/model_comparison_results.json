@@ -1,0 +1,38 @@
+{
+    "BERT": {
+        "eval_loss": 0.9970428347587585,
+        "eval_accuracy": 0.575,
+        "eval_f1": 0.41984126984126985,
+        "eval_runtime": 6.4566,
+        "eval_samples_per_second": 6.195,
+        "eval_steps_per_second": 0.774,
+        "epoch": 1.0
+    },
+    "BioBERT": {
+        "eval_loss": 0.984896183013916,
+        "eval_accuracy": 0.575,
+        "eval_f1": 0.41984126984126985,
+        "eval_runtime": 6.7448,
+        "eval_samples_per_second": 5.93,
+        "eval_steps_per_second": 0.741,
+        "epoch": 1.0
+    },
+    "SciBERT": {
+        "eval_loss": 1.0082900524139404,
+        "eval_accuracy": 0.575,
+        "eval_f1": 0.41984126984126985,
+        "eval_runtime": 4.5761,
+        "eval_samples_per_second": 8.741,
+        "eval_steps_per_second": 1.093,
+        "epoch": 1.0
+    },
+    "PubMedBERT": {
+        "eval_loss": 0.9849028587341309,
+        "eval_accuracy": 0.575,
+        "eval_f1": 0.41984126984126985,
+        "eval_runtime": 3.8916,
+        "eval_samples_per_second": 10.278,
+        "eval_steps_per_second": 1.285,
+        "epoch": 1.0
+    }
+}
