@@ -1,0 +1,4 @@
+text,ground_truth,prediction_type,hallucination_type,confidence_score
+TNF inhibits immune response,incorrect,misinterpretation,misinterpretation,0.6
+Gene ABC cures psoriasis,incorrect,fabrication,fabrication,0.2
+Drug X universally treats all diseases,incorrect,overgeneralization,overgeneralization,0.4
